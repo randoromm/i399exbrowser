@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+    var allKeys = new Set(Object.keys(window));
+</script>
+
+<script type="text/javascript" src="external1.js"></script>
+
+<!--<script type="text/javascript" src="external2.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>-->
+
+<script>
+    console.log(Object.keys(window).filter(function (key) {
+        return !allKeys.has(key);
+    }));
+</script>
+
+</body>
+</html>

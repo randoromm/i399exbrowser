@@ -1,0 +1,10 @@
+{
+  "name": "ng1",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "json-server ./data/db.json --static ./ --routes data/routes.json"
+  },
+  "devDependencies": {
+    "json-server": "^0.9.5"
+  }
+}
